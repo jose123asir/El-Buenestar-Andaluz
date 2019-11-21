@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pagina web pedidos</title>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Free Web tutorials" />
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript" />
+        <meta name="author" content="Hege Refnes" />
+  </head>
+  <body background="./imagenes/pedidos.jpg">
+    <h1><strong>Rellena tu pedido</strong></h1>
+    <a href="index.html">Volver</a>
+    <form action="formulario.php" method="post">
+      <fieldset>
+          <legend>Nuestra carta</legend>
+          Platos 
+      </br>
+          <select name="platos">
+              <option value="Gazpacho" selected>Gazpacho</option> 
+              <option value="Pescaito Frito">Pescaito Frito</option>
+              <option value="Migas">Migas</option>
+              <option value="Tortilla de camarones">Tortilla de camarones</option>
+              <option value="Pipirrana">Pipirrana</option>
+          </select>
+      </br>
+    </br>
+    Raciones
+    <select name="raciones">
+        <option value="1">1</option> 
+        <option value="2" selected>2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+    </select>
+    <br/>
+    <br/>
+    Nombre 
+    <br/>
+    <input type="text" name="nombre" value=""  maxlength="30" required/>
+    
+    <br/>
+    
+    Apellidos 
+    <br/>
+    <input type="text" name="apellidos" value=""  maxlength="80" required/>
+    
+    <br/>
+    DNI 
+    <br/>
+    <input type="text" name="dni" value=""  maxlength="9" required/>
+    </br>
+    </br>
+    Domicilio
+    </br>
+    <input type="text" name="calle" value=""  maxlength="60" required/> 
+    Nº
+    <input type="text" name="numero" value=""  maxlength="6" required/>
+    Código Postal
+    <input type="text" name="cod_postal" value=""  maxlength="5" required/>
+    <br/>
+    <br/>
+    Para llevar +5 euros
+    <br/>
+    <label for="male">Sí</label>
+    <input type="radio" name="llevar" id="¿llevar?" value="si"><br>
+    <br/>
+    <input type="submit" name="enviar" value="Enviar" />
+    </fieldset>
+    </form>
+   </body>
+</html>
